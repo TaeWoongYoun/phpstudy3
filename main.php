@@ -9,6 +9,7 @@
 <body>
     <style>
         *{margin: 0; padding: 0;}
+        a{text-decoration: none; color: inherit;}
         table{border-collapse: collapse; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
         th{background-color: #ddd;}
         th,td{border: 1px solid black; padding: 10px;}
@@ -37,6 +38,20 @@
             <th>이름</th>
             <th>비고</th>
         </tr>
+        <?php
+            $sql = "SELECT * FROM club";
+            $result = mysqli_query($conn, $sql);
+            $id = mysqli_real_escape_string($conn, $_GET['id']);
+            while ($row = mysqli_fetch_array($result)) {
+                echo "
+                    <tr>
+                        <td>{$row['department']}</td>
+                        <td>{$row['grade']}</td>
+                        <td>{$row['name']}</td>
+                        <td>{$row['note']}</td>
+                    </tr>";
+            }
+        ?>
     </table>
 
     <table id="insert_modal" style="display: none;">
@@ -46,15 +61,24 @@
             <th>이름</th>
             <th>비고</th>
         </tr>
-        <tr>
-            <td>자동차IT과</td>
-            <td>3학년</td>
-            <td>윤태웅</td>
-            <td>회장</td>
-        </tr>
-        <tr>
-            <td colspan="4" style="text-align: center;"><button>추가</button></td>
-        </tr>
+        <?php
+            $sql = "SELECT * FROM club";
+            $result = mysqli_query($conn, $sql);
+            $id = mysqli_real_escape_string($conn, $_GET['id']);
+            while ($row = mysqli_fetch_array($result)) {
+                echo "
+                    <tr>
+                        <td>{$row['department']}</td>
+                        <td>{$row['grade']}</td>
+                        <td>{$row['name']}</td>
+                        <td>{$row['note']}</td>
+                    </tr>";
+            }
+            echo "
+            <tr>
+                <td colspan='4' style='text-align: center;'><a href='insert.php?id=$id'><button>추가</button></a></td>
+            </tr>"
+        ?>
     </table>
 
     <table id="update_modal" style="display: none;">
@@ -64,13 +88,21 @@
             <th>이름</th>
             <th>비고</th>
         </tr>
-        <tr>
-            <td>자동차IT과</td>
-            <td>3학년</td>
-            <td>윤태웅</td>
-            <td>회장</td>
-            <td><button>수정</button></td>
-        </tr>
+        <?php
+            $sql = "SELECT * FROM club";
+            $result = mysqli_query($conn, $sql);
+            $id = mysqli_real_escape_string($conn, $_GET['id']);
+            while ($row = mysqli_fetch_array($result)) {
+                echo "
+                    <tr>
+                        <td>{$row['department']}</td>
+                        <td>{$row['grade']}</td>
+                        <td>{$row['name']}</td>
+                        <td>{$row['note']}</td>
+                        <td><a href='update.php?id=$id'><button>수정</button></a></td>
+                    </tr>";
+            }
+        ?>
     </table>
 
     <table id="delete_modal" style="display: none;">
@@ -80,13 +112,21 @@
             <th>이름</th>
             <th>비고</th>
         </tr>
-        <tr>
-            <td>자동차IT과</td>
-            <td>3학년</td>
-            <td>윤태웅</td>
-            <td>회장</td>
-            <td><button>삭제</button></td>
-        </tr>
+        <?php
+            $sql = "SELECT * FROM club";
+            $result = mysqli_query($conn, $sql);
+            $id = mysqli_real_escape_string($conn, $_GET['id']);
+            while ($row = mysqli_fetch_array($result)) {
+                echo "
+                    <tr>
+                        <td>{$row['department']}</td>
+                        <td>{$row['grade']}</td>
+                        <td>{$row['name']}</td>
+                        <td>{$row['note']}</td>
+                        <td><a href='delete.php?id=$id'><button>수정</button></a></td>
+                    </tr>";
+            }
+        ?>
     </table>
 
     <script src="main.js"></script>
