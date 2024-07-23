@@ -30,7 +30,7 @@
             <input type="text" name="name" id="name" placeholder="이름"> <br>
             <input type="password" name="userpw" id="userpw" placeholder="비밀번호"> <br>
             <input type="password" id="userpw_check" placeholder="비밀번호 확인"> <br>
-            <input type="submit" value="회원가입">
+            <input type="submit" value="회원가입" class="join_submit">
             <input type="reset" value="취소" class="join_reset">
         </form>
     </div>
