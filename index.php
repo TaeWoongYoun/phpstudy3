@@ -20,5 +20,6 @@
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="index.js"></script>
+    <script src="check_id.js"></script>
 </body>
 </html>
