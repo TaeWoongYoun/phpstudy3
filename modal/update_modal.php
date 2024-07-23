@@ -1,5 +1,6 @@
 <table id="update_modal" style="display: none;">
         <tr>
+            <th>ID</th>
             <th>학과</th>
             <th>학년</th>
             <th>이름</th>
@@ -12,6 +13,7 @@
             while ($row = mysqli_fetch_array($result)) {
                 echo "
                     <tr>
+                        <td>{$row['id']}</td>
                         <td>{$row['department']}</td>
                         <td>{$row['grade']}</td>
                         <td>{$row['name']}</td>
