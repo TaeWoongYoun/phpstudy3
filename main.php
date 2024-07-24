@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <button class="logout" style="float: right;">로그아웃</button>
     <?php require('./btn_group/btn.php')?>
     <?php require('./modal/select_modal.php')?>
     <?php require('./modal/insert_modal.php')?>
     <?php require('./modal/update_modal.php')?>
     <?php require('./modal/delete_modal.php')?>
+    
 
     <script src="main.js"></script>
 </body>
