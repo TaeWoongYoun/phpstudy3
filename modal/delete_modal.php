@@ -18,7 +18,10 @@
                         <td>{$row['grade']}</td>
                         <td>{$row['name']}</td>
                         <td>{$row['note']}</td>
-                        <td><a href='delete.php?id=$id'><button>삭제</button></a></td>
+                        <form action='delete_process.php?userid=$id' method='post'>
+                            <input type='hidden' name='id' value='{$row['id']}'>
+                            <td><input type='submit' value='삭제'></td>
+                        </form>
                     </tr>";
             }
         ?>

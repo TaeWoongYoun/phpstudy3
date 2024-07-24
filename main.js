@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     logout.addEventListener('click', () =>{
         alert("로그아웃 성공");
-        location.href = 'index.php'
+        location.href = 'index.php';
     })
 
 });
