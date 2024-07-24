@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateModal = document.getElementById("update_modal");
     const deleteModal = document.getElementById("delete_modal");
     const logout = document.querySelector('.logout');
+    const member = document.querySelector('.member');
+    const memberModal = document.querySelector('.member_modal');
+    const memberClose = document.querySelector('.member_close');
 
     function modal(a, b, c){
         if (a) {
@@ -39,5 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("로그아웃 성공");
         location.href = 'index.php';
     })
+
+    // 회원관리 모달 영역
+    modal(member, memberModal, 'block');
+    modal(memberClose, memberModal, 'none');
 
 });

@@ -24,3 +24,17 @@ th,td{
     border: 1px solid black; 
     padding: 10px;
 }
+
+.member_modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 5px #444;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 10px;
+    display: none;
+}
