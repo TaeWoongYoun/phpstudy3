@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <button class="logout" style="float: right;">회원가입</button>
     <?php require('./btn_group/btn.php')?>
     <?php require('./modal/select_modal.php')?>
     <?php require('./modal/insert_modal.php')?>

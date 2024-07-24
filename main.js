@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const insertModal = document.getElementById("insert_modal");
     const updateModal = document.getElementById("update_modal");
     const deleteModal = document.getElementById("delete_modal");
+    const logout = document.querySelector('.logout');
 
     function modal(a, b, c){
         if (a) {
@@ -33,4 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     modal(deleteBtn, insertModal, 'none');
     modal(deleteBtn, selectModal, 'none');
     modal(deleteBtn, updateModal, 'none');
+
+    logout.addEventListener('click', () =>{
+        alert("로그아웃 성공");
+        location.href = 'index.php'
+    })
+
 });
