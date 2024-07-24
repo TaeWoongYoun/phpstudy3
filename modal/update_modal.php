@@ -18,7 +18,7 @@
                         <td>{$row['grade']}</td>
                         <td>{$row['name']}</td>
                         <td>{$row['note']}</td>
-                        <td><a href='update.php?id=$id'><button>수정</button></a></td>
+                        <td><a href='update.php?id={$row['id']}&userid=$id'><button>수정</button></a></td>
                     </tr>";
             }
         ?>
