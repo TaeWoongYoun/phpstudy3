@@ -1,4 +1,4 @@
-<?php $conn = mysqli_connect('localhost', 'root', '', 'phpstudy3')?>
+<?php $conn = mysqli_connect('localhost', 'root', '1234', 'phpstudy3')?>
 
 <?php
     $id = $_POST['userid'];

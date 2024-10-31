@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect('localhost', 'root', '', 'phpstudy3');
+$conn = mysqli_connect('localhost', 'root', '1234', 'phpstudy3');
 ?>
 <!DOCTYPE html>
 <html lang="ko">
